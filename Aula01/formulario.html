@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Cadastro de Cliente</h1>
+        <form action="action-cadastro.php" method="get">
+            <p>
+                <label for="Nome">Nome:</label>
+                <input type="text"  id="nome" placeholder="Insira seu nome" name="txtNome">
+            </p>
+            <p>
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" placeholder="Insira sua idade" name="txtIdade">
+            </p>
+            <p>
+                <label for="sexo" >Sexo:</label>
+                <input type="radio" name= "sexo" value= "Masculino">Masculino
+                <input type="radio" name= "sexo" value= "Feminino">Feminino
+            </p>
+            <p>
+                <label for="estadoCivil">Estado Civil</label>
+                <select name="estCivil">
+                    <option>Selecione</option>
+                    <option value="Solteiro">Solteiro</option>
+                    <option value="Casado">Casado</option>
+                    <option value="Viuvo">Viúvo</option>
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
