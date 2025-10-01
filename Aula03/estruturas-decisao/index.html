@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula - 03</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Notas dos alunos</h1>
+    <form action="action-notas.php" method="post">
+        <div class="control">
+            <label for="nome">Nome do aluno:</label>
+            <input type="text" id="nome" step="0.01" placeholder="Digite seu nome:" name="txtNome">
+        </div>
+        <div class="control">
+            <label for="nota1">1ª nota do aluno:</label>
+            <input type="number" id="nota1" step="0.01" name="numberNota1">
+        </div>
+        <div class="control">
+            <label for="nota2">2ª nota do aluno:</label>
+            <input type="number" id="nota2" step="0.01" name="numberNota2">
+        </div>
+        <div class="control">
+            <label for="nota3">3ª nota do aluno:</label>
+            <input type="number" id="nota3" step="0.01" name="numberNota3">
+        </div>
+        <div class="control">
+            <label for="nota4">4ª nota do aluno:</label>
+            <input type="number" id="nota4" step="0.01" name="numberNota4">
+        </div>
+        <div class="control">
+            <input type="submit" class="button" value="Calcular">
+        </div>
+        
+    </form>
+</body>
+</html>
