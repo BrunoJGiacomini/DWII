@@ -7,18 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table style="border-collapse: collapse;">
-        <?php 
-        $numInicial = $_POST['nInicial'];
-        $numFinal = $_POST['nFinal'];
+    <table style="border-collapse: collapse; width: 180px;">
+<?php 
+$num = $_POST['nInicial'];
 
-        for($i = $numInicial; $i <= $numFinal; $i++){
-            echo("<tr><td style = 'border: 1px solid'>");
-            echo($i ."<br>");
-            echo("</tr></td>");
-        }
-    ?>
-    </table>
+
+echo ("<tr><td style = 'border: 1px solid black ; text-align: center; background-color: #5f9ea0; color:#fff; font-size: 18px'>");
+echo ("Tabuada do " . $num);
+echo ("</td></tr>");
+
+
+for ($i = 0; $i <= 10; $i++) {
+
+     $bgColor = ($i % 2 == 0) ? '#f5f5dc' : '#fff';
+     echo("<tr style = 'background-color: $bgColor;'><td style = 'border: 1px solid; text-align: center; font-size: 18px'>");
+        echo($num . " X " . $i . " = " .($num * $i) ."<br>");
+        echo("</td></tr>");
+}
+?>
+</table>
     
 </body>
 </html>
